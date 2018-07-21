@@ -1,0 +1,26 @@
+{
+  "name": "cush-plugin-coffee",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "description": "coffeescript for cush",
+  "repository": "cushJS/cush-plugin-coffee",
+  "scripts": {
+    "build": "coffee-build src -o lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "lodge": "^0.0.9",
+    "semver": "^5.5.0"
+  },
+  "devDependencies": {
+    "coffeelint": "^2.1.0",
+    "coffeescript": "^2.3.0",
+    "wch-coffee": "*"
+  },
+  "peerDependencies": {
+    "cush": "^0.2.0"
+  }
+}
