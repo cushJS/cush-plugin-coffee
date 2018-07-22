@@ -1,4 +1,4 @@
-# cush-plugin-coffee v0.1.0
+# cush-plugin-coffee v0.1.1
 
 Transform `.coffee` assets into Javascript.
 
