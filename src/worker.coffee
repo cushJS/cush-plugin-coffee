@@ -30,8 +30,9 @@ module.exports = ->
 
   exts = @get('coffee.exts')
   @transform exts, (asset, pack) =>
+    return if !coffee = pack[COFFEE]
 
-    result = pack[COFFEE].compile asset.content,
+    result = coffee.compile asset.content,
       filename: @relative asset.path
       sourceMap: true
       bare: true
